@@ -56,10 +56,10 @@ export class GuideSnapService {
     this.guideCollection = new Collection();
 
     this.snapLayer = new VectorLayer({
-        source: new VectorSource({
-      features: this.guideCollection
-    }),
-      //  style: new Style({})
+      source: new VectorSource({
+        features: this.guideCollection
+      }),
+      style: new Style({})
     });
 
     this.edgeSnapInteraction = new Snap({
